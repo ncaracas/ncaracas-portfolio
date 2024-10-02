@@ -1,19 +1,78 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    font-family: "Raleway", sans-serif;
 }
 
-.cabecalho__container{
+body {
     width: 100%;
-    display: flex;
-    justify-content: space-around;    
-    margin: 0 auto;
 }
 
-ul {
+.cabecalho__container{    
+    display: flex;
+    justify-content: space-between;    
+    margin: 0 auto;
+    width: 1136px;
+    height: 88px;
+    align-items: center;    
+}
+
+.cabecalho__container--menu {
     display: flex;    
     flex-direction: row;    
     list-style-type: none;
     gap: 18px;
+    color: #464646;
+    text-decoration: none;
 }
 
+.menu__email {
+    text-decoration: none;
+    color: #464646;
+    font-weight: bold;
+}
+
+.apresentacao__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1136px;
+    height: 368px;
+    margin-top: 32px;    
+}
+
+.apresentacao__container--sobre-mim {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    width: 751px;
+    height: 246px;
+    font-size: 22px;
+    gap: 15px;
+}
+
+.apresentacao__container--links {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;    
+    list-style-type: none;    
+    font-size: 16px;    
+}
+
+.links-link {
+    text-decoration: none;
+    color: #464646;
+}
+
+.apresentacao__container--sobre-mim h2 {
+    font-size: 52px;
+    color: #464646;
+    font-weight: bold;
+}
+
+.sobre-mim__container {
+    margin-top: 32px;
+    width: 100%;
+    height: 383px;
+    background-color: #EAF2FD;
+}

@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/flexbox.css">
@@ -12,17 +15,34 @@
     <header>
         <nav class="cabecalho__container">
             <p>Nelson Caracas</p>            
-            <ul>
+            <ul class="cabecalho__container--menu">
                 <li>Sobre mim</li>
                 <li>Skills</li>
                 <li>Hobbies</li>
                 <li>Formação</li>
                 <li>Projetos</li> 
-                <li><a href="contato.ncaracas@gmail.com">contato.ncaracas@gmail.com</a></li>                             
+                <li><a class="menu__email" href="contato.ncaracas@gmail.com">contato.ncaracas@gmail.com</a></li>                             
             </ul>           
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section class="apresentacao__container">
+            <div class="apresentacao__container--sobre-mim">
+                <h2>Olá, me chamo Nelson Caracas! Sou Desenvolvedor Full Stack</h2>
+                <p>Sou formado em Administração Pública com aptidão em desenvolvimento de sites e sistemas.</p>
+                <ul class="apresentacao__container--links">
+                    <li><a class="links-link" href="#">GitHub</a></li>
+                    <li><a class="links-link" href="#">LinkedIn</a></li>
+                    <li><a class="links-link" href="#">Instagran</a></li>
+                    <li><a class="links-link" href="#">Currículo</a></li>
+                </ul>
+            </div>
+            <img src="./assets/foto-perfil.png" alt="Foto do Perfil">            
+        </section>
+        <section class="sobre-mim__container">
+            
+        </section>
+    </main>
     <footer></footer>
 </body>
 </html>
