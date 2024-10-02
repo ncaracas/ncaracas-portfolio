@@ -41,7 +41,7 @@ body {
     margin-top: 32px;    
 }
 
-.apresentacao__container--sobre-mim {
+.apresentacao__container--apresentacao {
     display: flex;
     flex-direction: column;
     margin-top: 32px;
@@ -49,6 +49,12 @@ body {
     height: 246px;
     font-size: 22px;
     gap: 15px;
+}
+
+.apresentacao__container--apresentacao h2 {
+    font-size: 52px;
+    color: #464646;
+    font-weight: bold;    
 }
 
 .apresentacao__container--links {
@@ -64,15 +70,124 @@ body {
     color: #464646;
 }
 
-.apresentacao__container--sobre-mim h2 {
-    font-size: 52px;
+.sobre-mim__container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    margin-top: 32px;
+    width: 100%;
+    height: 383px;
+    background-color: #EAF2FD;    
+}
+
+.sobre-mim__container--conteudo {   
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;        
+    width: 1136px;
+    height: 255px;
+    gap:16px;    
+}
+
+.sobre-mim__container--conteudo h2 {
+    font-size: 32px;
     color: #464646;
     font-weight: bold;
 }
 
-.sobre-mim__container {
-    margin-top: 32px;
+.sobre-mim__container--conteudo--paragrafo {
+    width: 751px;
+    font-size: 16px;
+    color: #464646;
+}
+
+.sobre-mim__container--conteudo img {
+    width: 140px;
+}   
+
+.formacao__container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 383px;
+    height: 1245px;
+    padding: 32px 0;
+    gap: 88px;          
+}
+
+.formacao__container--skills {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;        
+    width: 1136px;
+    height: 244px;  
+}
+
+.formacao__container--skills, 
+.formacao__container--hobbies,
+.formacao__container--formacao-academica h2 {    
+    text-align: center;
+    color:#464646;
+    font-size: 32;
+    font-weight: bold;
+}
+
+.formacao__container--skills--itens {
+    display: flex;
+    flex-direction: row;
+    width: 1136px;
+    margin-top: 32px;   
+    gap: 16px;
+}
+
+.formacao__container--skills--item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+    font-size: 16px; 
+    padding: 20px;
+    width: 176px;
+    height: 174px;
+}
+
+.js{
+    width: 24px;
+    height: 37px;
+}
+
+.formacao__container--hobbies {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;          
+    width: 1136px;
+    height: 244px;
+}
+
+.formacao__container--hobbies--itens {
+    display: flex;
+    flex-direction: row;
+    width: 1136px;
+    margin-top: 32px;   
+    gap: 16px;
+}
+
+.formacao__container--hobbies--item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+    font-size: 16px;    
+    padding: 20px;
+    width: 176px;
+    height: 174px;
+}
+
+.formacao__container--formacao-academica {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;        
+    width: 100%;
+    height: 581px;
     background-color: #EAF2FD;
+    gap:16px;
 }
