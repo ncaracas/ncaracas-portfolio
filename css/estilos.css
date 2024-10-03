@@ -223,13 +223,12 @@ body {
 }
  
 .formacao__container--cursos--itens {
-    display: flex;
-    justify-content: center;
+    display: flex;      
 }
 
 .formacao__container--cursos--cubos,
-.formacao__container--cursos--outro,
-.formacao__container--cursos--novo {
+.formacao__container--cursos--devmedia,
+.formacao__container--cursos--alura {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -239,9 +238,9 @@ body {
 }
 
 .formacao__container--cursos--cubos h5,
-.formacao__container--cursos--outro h5,
-.formacao__container--cursos--novo h5 {
+.formacao__container--cursos--devmedia h5,
+.formacao__container--cursos--alura h5 {
     font-size: 22px;
     color: #464646;
-    font-weight: bold;
+    font-weight: bold;    
 }
