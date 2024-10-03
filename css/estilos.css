@@ -109,7 +109,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 1245px;
+    height: 1826px;
     padding: 32px 0;
     gap: 88px;          
 }
@@ -122,12 +122,13 @@ body {
     height: 244px;  
 }
 
-.formacao__container--skills, 
-.formacao__container--hobbies,
-.formacao__container--formacao-academica h2 {    
+.formacao__container--skills h2, 
+.formacao__container--hobbies h2,
+.formacao__container--formacao-academica h2,
+.formacao__container--cursos h2 {    
     text-align: center;
     color:#464646;
-    font-size: 32;
+    font-size: 32px;
     font-weight: bold;
 }
 
@@ -150,15 +151,15 @@ body {
     height: 174px;
 }
 
-.js{
+.html, .css, .js, .react, .node, .git, .headphone, .filmes, .futebol, .livros {
     width: 24px;
-    height: 37px;
+    height: 37px;    
 }
 
 .formacao__container--hobbies {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;          
+    margin: 0 auto;              
     width: 1136px;
     height: 244px;
 }
@@ -182,12 +183,65 @@ body {
     height: 174px;
 }
 
+.formacao__container--formacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 1000px;
+    background-color: #EAF2FD;
+    gap: 64px;
+}
+
 .formacao__container--formacao-academica {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;        
+    justify-content: center;            
     width: 100%;
-    height: 581px;
-    background-color: #EAF2FD;
     gap:16px;
+}
+
+.formacao__container--formacao-academica--adm-ufc {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #464646;
+    gap: 8px;
+}
+
+.formacao__container--formacao-academica--adm-ufc h5 {
+    font-size: 22px;
+    color: #464646;
+    font-weight: bold;
+}
+
+.formacao__container--cursos {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+ 
+.formacao__container--cursos--itens {
+    display: flex;
+    justify-content: center;
+}
+
+.formacao__container--cursos--cubos,
+.formacao__container--cursos--outro,
+.formacao__container--cursos--novo {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #464646;
+    gap: 8px;
+}
+
+.formacao__container--cursos--cubos h5,
+.formacao__container--cursos--outro h5,
+.formacao__container--cursos--novo h5 {
+    font-size: 22px;
+    color: #464646;
+    font-weight: bold;
 }
