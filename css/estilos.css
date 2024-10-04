@@ -109,7 +109,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 1826px;
+    height: 1700px;
     padding: 32px 0;
     gap: 88px;          
 }
@@ -125,7 +125,8 @@ body {
 .formacao__container--skills h2, 
 .formacao__container--hobbies h2,
 .formacao__container--formacao-academica h2,
-.formacao__container--cursos h2 {    
+.formacao__container--cursos h2,
+.experiencia-profissional h2 {    
     text-align: center;
     color:#464646;
     font-size: 32px;
@@ -218,12 +219,14 @@ body {
 
 .formacao__container--cursos {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;   
     gap: 16px;
 }
  
 .formacao__container--cursos--itens {
-    display: flex;      
+    display: flex;
+    margin: 0 auto;
+    gap: 16px;  
 }
 
 .formacao__container--cursos--cubos,
@@ -239,8 +242,142 @@ body {
 
 .formacao__container--cursos--cubos h5,
 .formacao__container--cursos--devmedia h5,
-.formacao__container--cursos--alura h5 {
+.formacao__container--cursos--alura h5,
+.experiencia-profissional__pdv-cubos--descricao h5,
+.experiencia-profissional__cubos-bank--descricao h5,
+.experiencia-profissional__decodificador--descricao h5,
+.experiencia-profissional__novo--descricao h5 {
     font-size: 22px;
     color: #464646;
     font-weight: bold;    
+}
+
+.experiencia-profissional {
+    display: flex;
+    flex-direction: column;    
+    width: 1136px;
+    height: 1900px;
+    margin: 0 auto;
+    gap: 32px;
+}
+
+.experiencia-profissional__pdv-cubos,
+.experiencia-profissional__cubos-bank,
+.experiencia-profissional__decodificador,
+.experiencia-profissional__novo {
+    display: flex;
+    gap: 16px;
+}
+
+.experiencia-profissional__cubos-bank > img,
+.experiencia-profissional__novo > img {
+    order: 2;
+}
+
+.experiencia-profissional__cubos-bank > div,
+.experiencia-profissional__novo > div {
+    order: 1;
+}
+
+.experiencia-profissional__pdv-cubos img,
+.experiencia-profissional__cubos-bank img,
+.experiencia-profissional__decodificador img,
+.experiencia-profissional__novo img {
+    box-shadow: 1px 5px 5px #686363;
+}
+
+.experiencia-profissional__pdv-cubos--descricao,
+.experiencia-profissional__cubos-bank--descricao,
+.experiencia-profissional__decodificador--descricao,
+.experiencia-profissional__novo--descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-repositorio {
+    width: 116px;
+    height: 51px;
+    color: #2A74E4;
+    border-color: #2A74E4;
+    background-color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn-ver_demo {
+    width: 116px;
+    height: 51px;
+    color: #FFF;
+    border-color: #2A74E4;
+    background-color: #2A74E4;
+    font-size: 16px;
+}
+
+.contato {
+    width: 100%;
+    height: 680px;
+    padding: 88px 0px;    
+    background-color: #EAF2FD;
+}
+
+.contato__container {
+    display: flex;       
+    width: 1136px;
+    height: 660px;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;   
+    gap: 16px;
+}
+
+.contato__container--formulario {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    gap: 8px;   
+}
+
+.contato__container--formulario h2 {    
+    color:#464646;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.contato__container--formulario--entradas {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contato__container--input {
+    width: 546px;
+    background-color: #FFF;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.contato__container__btn--input {
+    width: 165px;
+    height: 51px;
+    background-color: #2A74E4;
+    color: #FFF;
+    border: none;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;   
+    padding: 18px 0;
+    font-size: 16px;   
+    font-weight: 500;
 }
