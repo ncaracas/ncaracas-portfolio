@@ -29,7 +29,7 @@
         <section class="apresentacao__container">
             <div class="apresentacao__container--apresentacao">
                 <h2>Olá, sou Nelson Caracas! Desenvolvedor Full Stack</h2>
-                <p>Sou formado em Administração Pública com aptidão em desenvolvimento de sites e sistemas.</p>
+                <p>Sou formado em Administração Pública com habilidades em tecnologia desenvolvendo sites e sistemas para web.</p>
                 <ul class="apresentacao__container--links">
                     <li><a class="links-link" href="#">GitHub</a></li>
                     <li><a class="links-link" href="#">LinkedIn</a></li>
@@ -189,21 +189,24 @@
                     <h2>Contato</h2>
                     <p>Quer entrar em contato comigo?</br>
                     Preencha o formulário abaixo e entrarei em contato o mais rápido possível</p>
-                    <form class="contato__container--formulario--entradas" action="">
+                    <form class="contato__container--formulario--entradas" action="https://formsubmit.co/contato.ncaracas@gmail.com" method="POST">
                         <div>
                             <input class="contato__container--input" type="text" placeholder="Digite seu nome" name="nome" required>
                         </div>
                         <div>
-                            <input class="contato__container--input" type="text" placeholder="Digite seu e-mail" name="email" required>
+                            <input class="contato__container--input" type="email" placeholder="Digite seu e-mail" name="email" required>
                         </div>
                         <div>
                             <input class="contato__container--input" type="text" placeholder="Assunto" name="assunto" required>
                         </div>
                         <div>
-                            <textarea class="contato__container--input" rows="9" placeholder="Mensagem" name="mensagem" id="mensagem"></textarea>
-                        </div>
+                            <textarea class="contato__container--input" rows="8" placeholder="Mensagem" name="messagem" id="mensagem"></textarea>
+                        </div>                        
                         <div>
                             <input class="contato__container__btn--input" type="submit" value="Enviar mensagem">
+                        </div>
+                        <div>
+                            <input type="hidden" name="_next" value="https://127.0.0.1:5500/thanks.html">
                         </div>
                     </form>
                 </div>
