@@ -9,13 +9,21 @@ body {
     width: 100%;
 }
 
-.cabecalho__container{    
+.cabecalho__container {    
     display: flex;
     justify-content: space-between;    
     margin: 0 auto;
     width: 1136px;
     height: 88px;
     align-items: center;    
+}
+
+.cabecalho__container--nome {
+    display: flex;
+    font-size: 16px;
+    color: #464646;
+    font-weight: bold;
+    align-content: center;
 }
 
 .cabecalho__container--menu {
@@ -27,13 +35,18 @@ body {
     text-decoration: none;
 }
 
-.menu__email {
+.cabecalho__container--menu--item {
+    text-decoration: none;
+    color: #464646;
+}
+
+.cabecalho__container--menu--email {
     text-decoration: none;
     color: #464646;
     font-weight: bold;
 }
 
-.apresentacao__container {
+.apresentacao {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -42,7 +55,7 @@ body {
     margin-top: 32px;    
 }
 
-.apresentacao__container--apresentacao {
+.apresentacao__container {
     display: flex;
     flex-direction: column;
     margin-top: 32px;
@@ -52,7 +65,7 @@ body {
     gap: 15px;
 }
 
-.apresentacao__container--apresentacao h2 {
+.apresentacao__container h2 {
     font-size: 52px;
     color: #464646;
     font-weight: bold;    
@@ -71,7 +84,7 @@ body {
     color: #464646;
 }
 
-.sobre-mim__container {
+.sobre-mim {
     display: flex;
     flex-direction: column; 
     justify-content: center;
@@ -81,7 +94,7 @@ body {
     background-color: #EAF2FD;    
 }
 
-.sobre-mim__container--conteudo {   
+.sobre-mim__container {   
     display: flex;
     flex-direction: column;
     margin: 0 auto;        
@@ -90,23 +103,23 @@ body {
     gap:16px;    
 }
 
-.sobre-mim__container--conteudo h2 {
+.sobre-mim__container h2 {
     font-size: 32px;
     color: #464646;
     font-weight: bold;
 }
 
-.sobre-mim__container--conteudo--paragrafo {
+.sobre-mim__container--paragrafo {
     width: 751px;
     font-size: 16px;
     color: #464646;
 }
 
-.sobre-mim__container--conteudo img {
-    width: 140px;
+.sobre-mim__container img {
+    width: 160px;
 }   
 
-.formacao__container {
+.formacao {
     display: flex;
     flex-direction: column;
     width: 100%;

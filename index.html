@@ -14,35 +14,47 @@
 <body>
     <header>
         <nav class="cabecalho__container">
-            <p>Nelson Caracas</p>            
+            <p class="cabecalho__container--nome"> <svg width="22" height="22" style="margin-right: 10px" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 8L19.25 5.25L22 4L19.25 2.75L18 0L16.75 2.75L14 4L16.75 5.25L18 8Z" fill="#464646"/>
+                <path d="M18 14L16.75 16.75L14 18L16.75 19.25L18 22L19.25 19.25L22 18L19.25 16.75L18 14Z" fill="#464646"/>
+                <path d="M10.5 8.5L8 3L5.5 8.5L0 11L5.5 13.5L8 19L10.5 13.5L16 11L10.5 8.5ZM8.99 11.99L8 14.17L7.01 11.99L4.83 11L7.01 10.01L8 7.83L8.99 10.01L11.17 11L8.99 11.99Z" fill="#464646"/>
+                </svg> Nelson Caracas</p>            
             <ul class="cabecalho__container--menu">
-                <li>Sobre mim</li>
-                <li>Skills</li>
-                <li>Hobbies</li>
-                <li>Formação</li>
-                <li>Projetos</li> 
-                <li><a class="menu__email" href="contato.ncaracas@gmail.com">contato.ncaracas@gmail.com</a></li>                             
+                <li><a href="#sobre-mim" class="cabecalho__container--menu--item">Sobre mim</a></li>
+                <li><a href="#skills" class="cabecalho__container--menu--item">Skills</a></li>
+                <li><a href="#hobbies" class="cabecalho__container--menu--item">Hobbies</a></li>
+                <li><a href="#formacao" class="cabecalho__container--menu--item">Formação</a></li>
+                <li><a href="#projetos" class="cabecalho__container--menu--item">Projetos</a></li> 
+                <li><a href="#contato" class="cabecalho__container--menu--email" href="contato.ncaracas@gmail.com">contato.ncaracas@gmail.com</a></li>                             
             </ul>           
         </nav>
     </header>
     <main>
-        <section class="apresentacao__container">
-            <div class="apresentacao__container--apresentacao">
+        <section class="apresentacao">      
+            <div class="apresentacao__container">
                 <h2>Olá, sou Nelson Caracas! Desenvolvedor Full Stack</h2>
-                <p>Sou formado em Administração Pública com habilidades em tecnologia desenvolvendo sites e sistemas para web.</p>
+                <p>Formado em Administração Pública, encontrei minha vocação na tecnologia, focando no desenvolvimento de softwares e na criação de sites para a web. Com uma abordagem analítica e criativa, busco unir o conhecimento em gestão pública à inovação tecnológica para criar soluções eficientes e impactantes.</p>
                 <ul class="apresentacao__container--links">
-                    <li><a class="links-link" href="#">GitHub</a></li>
-                    <li><a class="links-link" href="#">LinkedIn</a></li>
-                    <li><a class="links-link" href="#">Instagran</a></li>
-                    <li><a class="links-link" href="#">Currículo</a></li>
+                    <li><a class="links-link" href="https://github.com/ncaracas" target="_blank">GitHub</a> <svg width="13" height="13" style="margin-left: 5px" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.05027 12.364L10.6558 3.75847V11.6639L12.6569 11.6569V0.343146H1.34316V2.33719L9.24154 2.34426L0.636051 10.9497L2.05027 12.364Z" fill="#464646"/>
+                        </svg></li>
+                    <li><a class="links-link" href="https://www.linkedin.com/in/ncaracas/" target="_blank">LinkedIn</a> <svg width="13" height="13" style="margin-left: 5px" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.05027 12.364L10.6558 3.75847V11.6639L12.6569 11.6569V0.343146H1.34316V2.33719L9.24154 2.34426L0.636051 10.9497L2.05027 12.364Z" fill="#464646"/>
+                        </svg></li>
+                    <li><a class="links-link" href="https://www.instagram.com/nelsoncaracas_/" target="_blank">Instagram</a> <svg width="13" height="13" style="margin-left: 5px" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.05027 12.364L10.6558 3.75847V11.6639L12.6569 11.6569V0.343146H1.34316V2.33719L9.24154 2.34426L0.636051 10.9497L2.05027 12.364Z" fill="#464646"/>
+                        </svg></li>
+                    <li><a class="links-link" href="#">Currículo</a> <svg width="13" height="13" style="margin-left: 5px" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.05027 12.364L10.6558 3.75847V11.6639L12.6569 11.6569V0.343146H1.34316V2.33719L9.24154 2.34426L0.636051 10.9497L2.05027 12.364Z" fill="#464646"/>
+                        </svg></li>
                 </ul>
             </div>
             <img src="./assets/foto-perfil.png" alt="Foto do Perfil">            
         </section>
-        <section class="sobre-mim__container">
-            <div class="sobre-mim__container--conteudo">
+        <section class="sobre-mim">
+            <div id="sobre-mim" class="sobre-mim__container">
                 <h2>Sobre mim</h2>
-                <div class="sobre-mim__container--conteudo--paragrafo">
+                <div class="sobre-mim__container--paragrafo">
                     <p>Natural de Fortaleza, sou graduado em Administração Pública, casado 
                     e pai de dois filhos. Minha paixão por tecnologia se manifestou desde 
                     cedo, em cursos técnicos de informática e também de programação, posteriormente me 
@@ -50,11 +62,11 @@
                     Minha trajetória profissional transcende a vocação tecnológica, com experiência 
                     em gestão em diversos segmentos e vivência como empreendedor.</p>
                 </div>
-                <img class="sobre-mim__container--conteudo--img" src="./assets/assinatura.png" alt="Assinatura">
+                <img class="sobre-mim__container--img" src="./assets/assinatura.png" alt="Assinatura">
             </div>
         </section>
-        <section class="formacao__container">
-            <div class="formacao__container--skills">
+        <section class="formacao">
+            <div id="skills" class="formacao__container--skills">
                 <h2>Skills</h2>
                 <div class="formacao__container--skills--itens">
                     <div class="formacao__container--skills--item"> 
@@ -83,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <div class="formacao__container--hobbies">
+            <div id="hobbies" class="formacao__container--hobbies">
                 <h2>Hobbies</h2>
                 <div class="formacao__container--hobbies--itens">
                     <div class="formacao__container--hobbies--item"> 
@@ -100,11 +112,11 @@
                     </div>
                     <div class="formacao__container--hobbies--item"> 
                         <p class="livros"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#2A7AE4" d="M96 0C43 0 0 43 0 96L0 416c0 53 43 96 96 96l288 0 32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64c17.7 0 32-14.3 32-32l0-320c0-17.7-14.3-32-32-32L384 0 96 0zm0 384l256 0 0 64L96 448c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16zm16 48l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg></p>
-                        <p>Livros</p>
+                        <p>Literatura Técnica</p>
                     </div>                                      
                 </div>
             </div>
-            <div class="formacao__container--formacoes">
+            <div id="formacao" class="formacao__container--formacoes">
                 <div class="formacao__container--formacao-academica">
                     <h2>Formação Acadêmica</h2>
                     <div class="formacao__container--formacao-academica--adm-ufc">
@@ -132,10 +144,10 @@
                             <p>2025 - Alura</p>
                         </div>
                     </div>                  
-                </div>                
+                </div>                  
             </div>
         </section>
-        <section class="experiencia-profissional">
+        <section id="projetos" class="experiencia-profissional">
             <h2>Experiência Profissional</h2>
             <div class="experiencia-profissional__pdv-cubos">
                 <img src="./assets/cubos-pdv.png" alt="Imagem projeto CubosPDV">
@@ -183,7 +195,7 @@
             </div>   
         </section>
         <section class="contato">
-            <div class="contato__container">
+            <div id="contato" class="contato__container">
                 <img src="./assets/telefone.png" alt="Imagem Telefone">
                 <div class="contato__container--formulario">
                     <h2>Contato</h2>
