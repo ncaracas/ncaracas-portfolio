@@ -5,22 +5,27 @@
     font-family: "Raleway", sans-serif;
 }
 
-body {
+    body {    
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    position: relative;
     width: 100%;
+    height: 100vh;
+    overflow: auto;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #EDEDED;   
 }
 
 .cabecalho__container {    
     display: flex;
-    justify-content: space-between;    
-    margin: 0 auto;
-    width: 1136px;
-    height: 88px;
-    align-items: center;    
+    justify-content: space-between;
+    padding: 2rem 9.5rem;
+    align-items: center;   
 }
 
 .cabecalho__container--nome {
     display: flex;
-    font-size: 16px;
     color: #464646;
     font-weight: bold;
     align-content: center;
@@ -30,9 +35,9 @@ body {
     display: flex;    
     flex-direction: row;    
     list-style-type: none;
-    gap: 18px;
     color: #464646;
     text-decoration: none;
+    gap: 1.12rem;
 }
 
 .cabecalho__container--menu--item {
@@ -49,24 +54,20 @@ body {
 .apresentacao {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    width: 1136px;
-    height: 368px;
-    margin-top: 32px;    
+    background-color: #EDEDED;          
 }
 
 .apresentacao__container {
     display: flex;
     flex-direction: column;
-    margin-top: 32px;
-    width: 751px;
-    height: 246px;
-    font-size: 22px;
-    gap: 15px;
+    justify-content: center;
+    font-size: 2.5rem;
+    text-align: left;
+    gap: 0.5rem;    
 }
 
 .apresentacao__container h2 {
-    font-size: 52px;
+    font-size: 3.25rem;
     color: #464646;
     font-weight: bold;    
 }
@@ -76,7 +77,6 @@ body {
     flex-direction: row;
     gap: 2em;    
     list-style-type: none;    
-    font-size: 16px;    
 }
 
 .links-link {
@@ -87,20 +87,16 @@ body {
 .sobre-mim {
     display: flex;
     flex-direction: column; 
-    justify-content: center;
-    margin-top: 32px;
-    width: 100%;
-    height: 383px;
+    justify-content: center;    
+    height: 384px;
     background-color: #EAF2FD;    
 }
 
 .sobre-mim__container {   
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;        
-    width: 1136px;
-    height: 255px;
-    gap:16px;    
+    flex-direction: column;                
+    text-align: left;    
+    gap: 1rem;     
 }
 
 .sobre-mim__container h2 {
@@ -109,23 +105,24 @@ body {
     font-weight: bold;
 }
 
-.sobre-mim__container--paragrafo {
+.sobre-mim__container p {
     width: 751px;
     font-size: 16px;
     color: #464646;
 }
 
 .sobre-mim__container img {
-    width: 160px;
+    width: 130px;
 }   
 
 .formacao {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 1700px;
+    height: 1720px;
     padding: 32px 0;
-    gap: 88px;          
+    gap: 88px;
+    background-color: #FFF;          
 }
 
 .formacao__container--skills {
@@ -203,7 +200,7 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 1000px;
+    height: 1120px;
     background-color: #EAF2FD;
     gap: 64px;
 }
@@ -268,11 +265,12 @@ body {
 
 .experiencia-profissional {
     display: flex;
-    flex-direction: column;    
-    width: 1136px;
-    height: 1900px;
-    margin: 0 auto;
-    gap: 32px;
+    flex-direction: column;
+    margin-top: 2rem;   
+    width: 100%;
+    height: 1980px;
+    padding: 0 9.5rem;
+    gap: 2rem;
 }
 
 .experiencia-profissional__pdv-cubos,
@@ -411,4 +409,116 @@ textarea:focus {
     padding: 18px 0px;
     font-size: 16px;   
     font-weight: 500;
+}
+
+
+@media (min-width: 768px) {
+    .cabecalho__container {
+        height: 56px;
+        padding: 1rem 2rem;
+    }
+
+    .apresentacao {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        padding: 2rem;       
+        height: 250px;
+    }
+    
+    .apresentacao__container {
+        width: 75%;
+    }
+    
+    .apresentacao__container h2 {
+        font-size: 1.8rem;
+    }
+    
+    .apresentacao__container p {
+        font-size: 1rem;
+    }
+    
+    .apresentacao__container--links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;        
+    }
+    
+    .apresentacao__container--links li {
+        list-style: none;
+    }
+    
+    .links-link {
+        font-size: 1rem;
+        text-decoration: none;
+        color: #464646;
+    }
+    
+    .apresentacao img {
+        width: 25%; /* Ajusta a imagem para ocupar um espaço proporcional */
+        max-width: 300px;        
+    }
+
+    .sobre-mim {
+        display: flex;
+        justify-content: center;
+        padding: 0 2rem;                     
+        height: 330px;
+    }
+
+    .sobre-mim__container {                        
+        width: 328px;
+        height: 258px;
+    } 
+
+    .sobre-mim__container h2 {
+        font-size: 1.4rem;
+    }
+
+    .sobre-mim__container p {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .cabecalho__container {
+        padding: 2rem 9.5rem;      
+    }
+
+    .apresentacao {
+        height: 576px;
+        margin-top: 1rem;
+        padding: 2rem 9.5rem;
+    }   
+
+    .apresentacao__container {                
+        width: 751px;
+        height: 245px;                        
+    }
+
+    .apresentacao__container h2 {
+        font-size: 3.25rem;                
+    }
+
+    .apresentacao__container p {
+        font-size: 1.375rem;        
+    }
+
+    .sobre-mim {
+        height: 400px;
+        padding: 0 9.5rem;
+    }
+
+    .sobre-mim__container {
+        height: 350px;
+    }
+
+    .sobre-mim__container h2 {
+        font-size: 2rem;
+    }
+
+    .sobre-mim__container p {
+        font-size: 1.1rem;
+    }
 }
