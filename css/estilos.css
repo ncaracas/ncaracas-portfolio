@@ -115,26 +115,22 @@
     width: 130px;
 }   
 
-.formacao {
+.atividade, .formacao {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 1720px;
-    padding: 32px 0;
-    gap: 88px;
+    flex-direction: column;    
+    height: 600px;
+    padding: 2rem;
+    gap: 64px;
     background-color: #FFF;          
 }
 
-.formacao__container--skills {
+.atividade__container--skills {
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;        
-    width: 1136px;
-    height: 244px;  
+    flex-direction: column;      
 }
 
-.formacao__container--skills h2, 
-.formacao__container--hobbies h2,
+.atividade__container--skills h2, 
+.atividade__container--hobbies h2,
 .formacao__container--formacao-academica h2,
 .formacao__container--cursos h2,
 .experiencia-profissional h2 {    
@@ -144,21 +140,19 @@
     font-weight: bold;
 }
 
-.formacao__container--skills--itens {
-    display: flex;
-    flex-direction: row;
-    padding: 0 9.5;
+.atividade__container--skills--itens {
+    display: flex;      
     margin-top: 32px;
     gap: 16px;
 }
 
-.formacao__container--skills--item {
+.atividade__container--skills--item {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: start;
     font-size: 16px; 
-    padding: 20px;
+    padding: 1rem;
     width: 176px;
     height: 174px;
 }
@@ -168,23 +162,18 @@
     height: 37px;    
 }
 
-.formacao__container--hobbies {
+.atividade__container--hobbies {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;              
-    width: 1136px;
-    height: 244px;
 }
 
-.formacao__container--hobbies--itens {
-    display: flex;
-    flex-direction: row;
-    width: 1136px;
+.atividade__container--hobbies--itens {
+    display: flex;    
     margin-top: 32px;   
     gap: 16px;
 }
 
-.formacao__container--hobbies--item {
+.atividade__container--hobbies--item {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -439,7 +428,7 @@ textarea:focus {
     }
     
     .apresentacao__container h2 {
-        font-size: 1.8rem;
+        font-size: 1.375rem;
     }
     
     .apresentacao__container p {
@@ -480,50 +469,79 @@ textarea:focus {
     } 
 
     .sobre-mim__container h2 {
-        font-size: 1.4rem;
+        font-size: 1.375rem;
     }
 
     .sobre-mim__container p {
         font-size: 0.8rem;
     }
 
-    .formacao {
-        display: flex;
-        align-items: center;
-        padding: 2rem;
+    .atividade, .formacao {
+        height: 750px;           
         background-color: #EDEDED;     
+    }  
+
+    .atividade__container--skills,
+    .atividade__container--hobbies  {
+        display: flex;                 
     }
 
-    .formacao__container--skills, .formacao__container--hobbies  {
-        display: flex;                       
-        height: auto;         
-    }
-
-    .formacao__container--skills h2, .formacao__container--hobbies h2 {
+    .atividade__container--skills h2, 
+    .atividade__container--hobbies h2 {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.4rem;
-        width: 62%;   
+        font-size: 1.375rem;
+           
     }
 
-    .formacao__container--skills--itens, .formacao__container--hobbies--itens {  
-        display: flex;
-        justify-content: center;
-        align-items: center;      
-        flex-wrap: wrap;                       
-        width: 62%;      
+    .atividade__container--skills--itens, 
+    .atividade__container--hobbies--itens {  
+        display: flex;         
+        flex-wrap: wrap;
+        width: 100%;      
     }
 
-    .formacao__container--skills--itens:nth-child(3) {
-        margin-right: 3rem;       
+    .atividade__container--skills--itens:nth-child(3), 
+    .atividade__container--hobbies--itens:nth-child(3) {
+        margin-right: 1rem;        
     }
 
-    .formacao__container--skills--item, .formacao__container--hobbies--item {
-        width: 224px;      
+    .atividade__container--skills--item, 
+    .atividade__container--hobbies--item {
+        width: 224px;
+        height: 118px;     
         background-color: #FFF;        
     }
+
+    .formacao__container--formacoes{            
+        gap: 8rem;
+    }
+
+    .formacao__container--formacao-academica h2,
+    .formacao__container--cursos h2  {
+        font-size: 1.375rem;
+    }
+
+    .formacao__container--formacao-academica--adm-ufc,
+    .formacao__container--cursos--cubos, 
+    .formacao__container--cursos--devmedia,
+    .formacao__container--cursos--alura {    
+        width: 224px;
+        height: 169px;  
+        font-size: 0.875rem;
+    }
+
+    .formacao__container--formacao-academica--adm-ufc h5,
+    .formacao__container--cursos--cubos h5, 
+    .formacao__container--cursos--devmedia h5,
+    .formacao__container--cursos--alura h5 {    
+        font-size: 1rem;
+    }
 }
+
+
+
 
 
 @media (min-width: 1440px) {
@@ -575,18 +593,20 @@ textarea:focus {
         font-size: 1.1rem;
     }
 
-    .formacao {
+    .atividade, .formacao {
         display: flex;        
-        width: 100%;
+        height: 650px;
         background-color: #FFF;     
     }
 
-    .formacao__container--skills, .formacao__container--hobbies  {
+    .atividade__container--skills, 
+    .atividade__container--hobbies  {
         display: flex;                       
         height: auto;        
     }
 
-    .formacao__container--skills h2, .formacao__container--hobbies h2 {
+    .atividade__container--skills h2, 
+    .atividade__container--hobbies h2 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -594,7 +614,8 @@ textarea:focus {
         width: 100%;               
     }
 
-    .formacao__container--skills--itens, .formacao__container--hobbies--itens {  
+    .atividade__container--skills--itens, 
+    .atividade__container--hobbies--itens {  
         display: flex;
         justify-content: center;
         align-items: center;
@@ -602,7 +623,8 @@ textarea:focus {
         width: 100%;     
     }
 
-    .formacao__container--skills--item, .formacao__container--hobbies--item {
+    .atividade__container--skills--item, 
+    .atividade__container--hobbies--item {
         width: 176px;
         height: 174px;        
         background-color: #FFF;        
