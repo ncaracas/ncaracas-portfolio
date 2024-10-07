@@ -113,9 +113,9 @@
 
 .sobre-mim__container img {
     width: 130px;
-}   
+}
 
-.atividade, .formacao {
+.atividade {
     display: flex;
     flex-direction: column;    
     height: 600px;
@@ -131,8 +131,8 @@
 
 .atividade__container--skills h2, 
 .atividade__container--hobbies h2,
-.formacao__container--formacao-academica h2,
-.formacao__container--cursos h2,
+.formacao__container__graduacao h2,
+.formacao__container__cursos h2,
 .experiencia-profissional h2 {    
     text-align: center;
     color:#464646;
@@ -184,65 +184,55 @@
     height: 174px;
 }
 
-.formacao__container--formacoes {
+.formacao {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    height: 1120px;
+    align-items: center;    
+    height: 1100px;
+    padding: 0 9.5rem;    
     background-color: #EAF2FD;
-    gap: 64px;
+    gap: 6rem;                  
 }
 
-.formacao__container--formacao-academica {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;            
-    width: 100%;
-    gap:16px;
+.formacao__container__graduacao,
+.formacao__container__cursos {
+    display: flex;    
+    flex-direction: column;    
+    align-items: center;
+    gap: 1rem;
 }
 
-.formacao__container--formacao-academica--adm-ufc {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+.formacao__container__graduacao__itens,
+.formacao__container__cursos__itens {
+    display: flex;    
     font-size: 16px;
     color: #464646;
-    gap: 8px;
-}
+      
+}    
 
-.formacao__container--formacao-academica--adm-ufc h5 {
+.formacao__container__graduacao__itens h5
+.formacao__container__cursos__itens h5 {    
     font-size: 22px;
     color: #464646;
-    font-weight: bold;
+    font-weight: bold;    
 }
 
-.formacao__container--cursos {
+.formacao__container__graduacao--ufc,
+.formacao__container__cursos--cubos,
+.formacao__container__cursos--devmedia,
+.formacao__container__cursos--alura {
     display: flex;
-    flex-direction: column;   
-    gap: 16px;
-}
- 
-.formacao__container--cursos--itens {
-    display: flex;
-    margin: 0 auto;
-    gap: 16px;  
-}
-
-.formacao__container--cursos--cubos,
-.formacao__container--cursos--devmedia,
-.formacao__container--cursos--alura {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+    flex-direction: column;    
     font-size: 16px;
     color: #464646;
     gap: 8px;
 }
 
-.formacao__container--cursos--cubos h5,
-.formacao__container--cursos--devmedia h5,
-.formacao__container--cursos--alura h5,
+.formacao__container__graduacao--ufc h5,
+.formacao__container__cursos--cubos h5,
+.formacao__container__cursos--devmedia h5,
+.formacao__container__cursos--alura h5,
 .experiencia-profissional__pdv-cubos--descricao h5,
 .experiencia-profissional__cubos-bank--descricao h5,
 .experiencia-profissional__decodificador--descricao h5,
@@ -476,7 +466,7 @@ textarea:focus {
         font-size: 0.8rem;
     }
 
-    .atividade, .formacao {
+    .atividade {
         height: 750px;           
         background-color: #EDEDED;     
     }  
@@ -514,34 +504,38 @@ textarea:focus {
         background-color: #FFF;        
     }
 
-    .formacao__container--formacoes{            
-        gap: 8rem;
+    .formacao {        
+        height: 900px;        
+        gap: 10rem;
     }
 
-    .formacao__container--formacao-academica h2,
-    .formacao__container--cursos h2  {
+    .formacao__container__graduacao h2,
+    .formacao__container__cursos h2  {
         font-size: 1.375rem;
     }
 
-    .formacao__container--formacao-academica--adm-ufc,
-    .formacao__container--cursos--cubos, 
-    .formacao__container--cursos--devmedia,
-    .formacao__container--cursos--alura {    
+    .formacao__container__graduacao__itens,
+    .formacao__container__cursos__itens {        
+        gap: 1rem;    
+    }
+
+    .formacao__container__graduacao--ufc,
+    .formacao__container__cursos--cubos, 
+    .formacao__container__cursos--devmedia,
+    .formacao__container__cursos--alura {    
         width: 224px;
         height: 169px;  
         font-size: 0.875rem;
+        text-align: left;
     }
 
-    .formacao__container--formacao-academica--adm-ufc h5,
-    .formacao__container--cursos--cubos h5, 
-    .formacao__container--cursos--devmedia h5,
-    .formacao__container--cursos--alura h5 {    
+    .formacao__container__graduacao--ufc h5,
+    .formacao__container__cursos--cubos h5, 
+    .formacao__container__cursos--devmedia h5,
+    .formacao__container__cursos--alura h5 {    
         font-size: 1rem;
     }
 }
-
-
-
 
 
 @media (min-width: 1440px) {
@@ -593,7 +587,38 @@ textarea:focus {
         font-size: 1.1rem;
     }
 
-    .atividade, .formacao {
+    .formacao {
+        height: 1100px;
+        align-items: center;
+    }
+
+    .formacao__container__graduacao__itens,
+    .formacao__container__cursos__itens {        
+        gap: 9rem;    
+    }
+
+    .formacao__container__graduacao h2,
+    .formacao__container__cursos h2  {
+        font-size: 2rem;
+    }
+
+    .formacao__container__graduacao--ufc,
+    .formacao__container__cursos--cubos, 
+    .formacao__container__cursos--devmedia,
+    .formacao__container__cursos--alura {    
+        width: 368px;
+        height: 347px;  
+        font-size: 1rem;
+    }
+
+    .formacao__container__graduacao--ufc h5,
+    .formacao__container__cursos--cubos h5, 
+    .formacao__container__cursos--devmedia h5,
+    .formacao__container__cursos--alura h5 {    
+        font-size: 1.375rem;
+    }
+
+    .atividade {
         display: flex;        
         height: 650px;
         background-color: #FFF;     
