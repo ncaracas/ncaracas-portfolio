@@ -409,6 +409,7 @@ textarea:focus {
 
 
 @media (min-width: 360px) {
+    /* seção cabeçalho */
     
     .cabecalho__container {             
         height: 56px;
@@ -432,6 +433,8 @@ textarea:focus {
         font-size: 0.75rem;
         font-weight: normal;
     }
+
+    /* seção apresentação */
 
     .apresentacao {
         display: flex;
@@ -465,6 +468,21 @@ textarea:focus {
 
     .apresentacao > div {
         order: 2;
+    }
+
+    /* seção sobre mim */
+
+    .sobre-mim {                
+        padding: 1rem;
+    }
+    
+    .sobre-mim__container h2 {
+        font-size: 1.375rem;
+    }
+
+    .sobre-mim__container p {
+        width: 330px;
+        font-size: 0.875rem;
     }
 }
 
@@ -561,6 +579,7 @@ textarea:focus {
     }
 
     .sobre-mim__container p {
+        width: 100%;
         font-size: 0.8rem;
     }
 
