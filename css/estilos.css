@@ -408,11 +408,71 @@ textarea:focus {
 }
 
 
+@media (min-width: 360px) {
+    
+    .cabecalho__container {             
+        height: 56px;
+        padding: 1rem;        
+    }
+
+    .cabecalho__container__menu {
+        display: none;
+    }
+
+    .cabecalho__container__nome {        
+        font-size: 1rem;
+    }
+
+    .cabecalho__container__nome svg {        
+        width: 18px;
+        height: 18px;        
+    }
+
+    .cabecalho__container__email {        
+        font-size: 0.75rem;
+        font-weight: normal;
+    }
+
+    .apresentacao {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .apresentacao__container h2 {
+        font-size: 1.375rem;
+    }
+
+    .apresentacao__container p {
+        font-size: 0.875rem;
+    }
+
+    .apresentacao__container--links {
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+
+    .apresentacao__container--links svg {
+        width: 8px;
+        height: 8px;
+    }
+
+    .apresentacao > img {
+        order: 1;
+        width: 98px;
+        margin-bottom: 1rem;
+    }
+
+    .apresentacao > div {
+        order: 2;
+    }
+}
+
+
 @media (min-width: 768px) {
     /* seção cabeçalho */
 
-    .cabecalho__container {
-        height: 56px;
+    .cabecalho__container {                
         padding: 1rem 2rem;
     }
 
@@ -420,14 +480,20 @@ textarea:focus {
         display: none;
     }
 
-    .cabecalho__container__nome, .cabecalho__container__email {
-        font-size: 0.8rem;
+    .cabecalho__container__nome  {
+        font-size: 1rem;
     }
 
+    .cabecalho__container__email {
+        font-size: 1rem;
+        font-weight: bold;
+    }    
+    
     /* seção apresentação */
 
     .apresentacao {
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between; 
         padding: 2rem;       
@@ -435,7 +501,7 @@ textarea:focus {
     }
     
     .apresentacao__container {
-        width: 75%;
+        width: 60%;
     }
     
     .apresentacao__container h2 {
@@ -443,21 +509,22 @@ textarea:focus {
     }
     
     .apresentacao__container p {
-        font-size: 1rem;
+        font-size: 1rem;        
     }
     
     .apresentacao__container--links {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap;        
         gap: 1rem;        
     }
     
     .apresentacao__container--links li {
-        list-style: none;
+        list-style: none;        
     }
     
     .links-link {
         font-size: 1rem;
+        font-weight: 500;
         text-decoration: none;
         color: #464646;
     }
@@ -465,6 +532,14 @@ textarea:focus {
     .apresentacao img {
         width: 25%;
         max-width: 300px;        
+    }
+
+    .apresentacao > img {
+        order: 2;        
+    }
+
+    .apresentacao > div {
+        order: 1;
     }
 
     /* seção sobre mim */
