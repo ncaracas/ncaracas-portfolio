@@ -347,7 +347,8 @@
 }
 
 .contato__container--input {
-    width: 546px;
+    width: 656px;
+    height: 56px;
     background-color: #FFF;
     border: 1px solid transparent;
     color: black;
@@ -360,7 +361,19 @@
     box-shadow 0.2s;
 }
 
-textarea {
+.contato__container--textarea {
+    width: 656px;
+    height: 156px;
+    background-color: #FFF;
+    border: 1px solid transparent;
+    color: black;
+    padding: 16px 32px;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: border-color,
+    box-shadow 0.2s;
     resize: none;
 }
 
@@ -396,6 +409,8 @@ textarea:focus {
 
 
 @media (min-width: 768px) {
+    /* seção cabeçalho */
+
     .cabecalho__container {
         height: 56px;
         padding: 1rem 2rem;
@@ -408,6 +423,8 @@ textarea:focus {
     .cabecalho__container__nome, .cabecalho__container__email {
         font-size: 0.8rem;
     }
+
+    /* seção apresentação */
 
     .apresentacao {
         display: flex;
@@ -450,6 +467,8 @@ textarea:focus {
         max-width: 300px;        
     }
 
+    /* seção sobre mim */
+
     .sobre-mim {
         display: flex;
         justify-content: center;
@@ -469,6 +488,8 @@ textarea:focus {
     .sobre-mim__container p {
         font-size: 0.8rem;
     }
+
+    /* seção atividade */
 
     .atividade {
         height: 750px;           
@@ -508,6 +529,8 @@ textarea:focus {
         background-color: #FFF;        
     }
 
+    /* seção formação */
+
     .formacao {        
         height: 900px;        
         gap: 10rem;
@@ -545,7 +568,7 @@ textarea:focus {
         font-size: 1rem;
     }
 
-    /* secao experiencia profissional */
+    /* seção experiência profissional */
 
     .experiencia-profissional {
         display: flex;
@@ -589,10 +612,56 @@ textarea:focus {
         width: 108px;
         height: 40px;
     }
+
+    /* seção contato */
+
+    .comtato {
+        padding: 0 2rem;
+        height: 500px;        
+    }
+
+    .contato__container {
+        width: 100%;
+        height: 637px;       
+        font-size: 1rem;
+    }
+
+    .contato__container img {
+        display: none;        
+    }
+
+    .contato__container--formulario {
+        text-align: left;
+        font-size: 0.875rem;
+    }
+
+    .contato__container--formulario h2 {
+        display: flex;               
+        align-items: left;
+        font-size: 1.375rem;
+    }
+
+    .contato__container--input {
+        width: 704px;
+        height: 56px;
+    }
+
+    .contato__container--textarea {
+        width: 704px;
+    }    
+
+    .contato__container__btn--input {
+        display: flex;
+        justify-content: left;
+        width: 151px;
+        height: 40px;       
+    }
 }
 
 
 @media (min-width: 1440px) {
+    /* seção cabeçalho */
+
     .cabecalho__container {
         padding: 2rem 9.5rem;      
     }
@@ -604,6 +673,8 @@ textarea:focus {
     .cabecalho__container__nome, .cabecalho__container__email {
         font-size: 1rem;
     }
+
+    /* seção apresentação */
 
     .apresentacao {
         height: 576px;
@@ -624,6 +695,8 @@ textarea:focus {
         font-size: 1.375rem;        
     }
 
+    /* seção sobre mim */
+
     .sobre-mim {
         height: 400px;
         padding: 0 9.5rem;
@@ -640,6 +713,8 @@ textarea:focus {
     .sobre-mim__container p {
         font-size: 1.1rem;
     }
+
+    /* seção formação */
 
     .formacao {
         height: 1100px;
@@ -675,6 +750,8 @@ textarea:focus {
     .experiencia-profissional__pet-boutique h5 {    
         font-size: 1.375rem;
     }
+
+    /* seção atividade */
 
     .atividade {
         display: flex;        
@@ -713,11 +790,13 @@ textarea:focus {
         background-color: #FFF;        
     }
 
+    /* seção experiência profissional */
+
     .experiencia-profissional {
         display: flex;
         flex-direction: column;
         padding: 0 9.5rem;
-        height: 2200px;
+        height: 1950px;
     }
 
     .experiencia-profissional__pdv-cubos,
@@ -754,4 +833,32 @@ textarea:focus {
         width: 116px;
         height: 51px;
     }
+
+    /* seção contato */
+
+    .contato__container img {
+        display: flex;        
+    }
+
+    .contato__container--formulario {        
+        font-size: 1rem;
+    }
+
+    .contato__container--formulario h2 {        
+        font-size: 2rem;
+    }
+
+    .contato__container--input {
+        width: 656px;
+        height: 56px;
+    }
+
+    .contato__container--textarea {
+        width: 656px;
+    }
+
+    .contato__container__btn--input {    
+        width: 165px;
+        height: 51px;       
+    }   
 }
