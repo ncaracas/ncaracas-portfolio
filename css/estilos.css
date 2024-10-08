@@ -477,12 +477,55 @@ textarea:focus {
     }
     
     .sobre-mim__container h2 {
-        font-size: 1.375rem;
+        font-size: 1.375rem;        
     }
 
     .sobre-mim__container p {
         width: 330px;
         font-size: 0.875rem;
+    }
+
+    /* seção atividade */
+
+    .atividade {
+        height: 860px;           
+        background-color: #EDEDED;
+        padding: 1rem;     
+    }  
+
+    .atividade__container--skills,
+    .atividade__container--hobbies  {
+        display: flex;                 
+    }
+
+    .atividade__container--skills h2, 
+    .atividade__container--hobbies h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.375rem;           
+    }
+
+    .atividade__container--skills--itens, 
+    .atividade__container--hobbies--itens {  
+        display: flex;         
+        flex-wrap: wrap;
+        width: 100%;      
+    }
+
+    .atividade__container--skills--itens:nth-child(2), 
+    .atividade__container--hobbies--itens:nth-child(2) {
+        margin-right: 0.5rem;        
+    }
+
+    .atividade__container--skills--item, 
+    .atividade__container--hobbies--item {
+        width: 156px;
+        height: 118px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #464646;     
+        background-color: #FFF;        
     }
 }
 
@@ -600,8 +643,7 @@ textarea:focus {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.375rem;
-           
+        font-size: 1.375rem;           
     }
 
     .atividade__container--skills--itens, 
