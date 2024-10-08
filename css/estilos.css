@@ -94,9 +94,10 @@
 
 .sobre-mim__container {   
     display: flex;
-    flex-direction: column;                
-    text-align: left;    
-    gap: 1rem;     
+    flex-direction: column;                    
+    text-align: left;
+    width: 751px;    
+    gap: 1rem;      
 }
 
 .sobre-mim__container h2 {
@@ -106,9 +107,9 @@
 }
 
 .sobre-mim__container p {
-    width: 751px;
+    width: 700px;
     font-size: 16px;
-    color: #464646;
+    color: #464646; 
 }
 
 .sobre-mim__container img {
@@ -236,11 +237,13 @@
 .experiencia-profissional__pdv-cubos--descricao h5,
 .experiencia-profissional__cubos-bank--descricao h5,
 .experiencia-profissional__decodificador--descricao h5,
-.experiencia-profissional__novo--descricao h5 {
+.experiencia-profissional__pet-boutique--descricao h5 {
     font-size: 22px;
     color: #464646;
     font-weight: bold;    
 }
+
+/* seção experiencia profissional */
 
 .experiencia-profissional {
     display: flex;
@@ -255,35 +258,36 @@
 .experiencia-profissional__pdv-cubos,
 .experiencia-profissional__cubos-bank,
 .experiencia-profissional__decodificador,
-.experiencia-profissional__novo {
+.experiencia-profissional__pet-boutique {
     display: flex;
     gap: 16px;
 }
 
 .experiencia-profissional__cubos-bank > img,
-.experiencia-profissional__novo > img {
+.experiencia-profissional__pet-boutique > img {
     order: 2;
 }
 
 .experiencia-profissional__cubos-bank > div,
-.experiencia-profissional__novo > div {
+.experiencia-profissional__pet-boutique > div {
     order: 1;
 }
 
 .experiencia-profissional__pdv-cubos img,
 .experiencia-profissional__cubos-bank img,
 .experiencia-profissional__decodificador img,
-.experiencia-profissional__novo img {
+.experiencia-profissional__pet-boutique img {
     box-shadow: 1px 5px 5px #686363;
 }
 
 .experiencia-profissional__pdv-cubos--descricao,
 .experiencia-profissional__cubos-bank--descricao,
 .experiencia-profissional__decodificador--descricao,
-.experiencia-profissional__novo--descricao {
+.experiencia-profissional__pet-boutique--descricao {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: left;
     gap: 8px;
 }
 
@@ -454,7 +458,7 @@ textarea:focus {
     }
 
     .sobre-mim__container {                        
-        width: 328px;
+        width: 700px;
         height: 258px;
     } 
 
@@ -510,7 +514,8 @@ textarea:focus {
     }
 
     .formacao__container__graduacao h2,
-    .formacao__container__cursos h2  {
+    .formacao__container__cursos h2,
+    .experiencia-profissional h2  {
         font-size: 1.375rem;
     }
 
@@ -532,8 +537,57 @@ textarea:focus {
     .formacao__container__graduacao--ufc h5,
     .formacao__container__cursos--cubos h5, 
     .formacao__container__cursos--devmedia h5,
-    .formacao__container__cursos--alura h5 {    
+    .formacao__container__cursos--alura h5,
+    .experiencia-profissional__pdv-cubos--descricao h5 ,
+    .experiencia-profissional__cubos-bank--descricao h5,
+    .experiencia-profissional__decodificador--descricao h5,
+    .experiencia-profissional__pet-boutique--descricao h5 {    
         font-size: 1rem;
+    }
+
+    /* secao experiencia profissional */
+
+    .experiencia-profissional {
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem;
+        height: 2200px;
+    }
+
+    .experiencia-profissional__pdv-cubos,
+    .experiencia-profissional__cubos-bank,
+    .experiencia-profissional__decodificador,
+    .experiencia-profissional__pet-boutique  {
+        display: flex;
+        flex-direction: column;
+                
+    }
+
+    .experiencia-profissional__cubos-bank > img,
+    .experiencia-profissional__novo > img {
+        order: 1;
+    }
+
+    .experiencia-profissional__cubos-bank > div,
+    .experiencia-profissional__pet-boutique > div {
+        order: 2;
+    }
+
+    .experiencia-profissional__pdv-cubos--descricao,
+    .experiencia-profissional__cubos-bank--descricao,
+    .experiencia-profissional__decodificador--descricao,
+    .experiencia-profissional__pet-boutique--descricao {
+        font-size: 0.875rem;
+    }
+
+    .btn-repositorio {
+        width: 108px;
+        height: 40px;
+    }
+
+    .btn-ver_demo {
+        width: 108px;
+        height: 40px;
     }
 }
 
@@ -614,7 +668,11 @@ textarea:focus {
     .formacao__container__graduacao--ufc h5,
     .formacao__container__cursos--cubos h5, 
     .formacao__container__cursos--devmedia h5,
-    .formacao__container__cursos--alura h5 {    
+    .formacao__container__cursos--alura h5,
+    .experiencia-profissional__pdv-cubos h5,
+    .experiencia-profissional__cubos-bank h5,
+    .experiencia-profissional__decodificador h5,
+    .experiencia-profissional__pet-boutique h5 {    
         font-size: 1.375rem;
     }
 
@@ -653,5 +711,47 @@ textarea:focus {
         width: 176px;
         height: 174px;        
         background-color: #FFF;        
+    }
+
+    .experiencia-profissional {
+        display: flex;
+        flex-direction: column;
+        padding: 0 9.5rem;
+        height: 2200px;
+    }
+
+    .experiencia-profissional__pdv-cubos,
+    .experiencia-profissional__cubos-bank,
+    .experiencia-profissional__decodificador,
+    .experiencia-profissional__pet-boutique  {
+        display: flex;
+        flex-direction: row;          
+    }
+
+    .experiencia-profissional__cubos-bank > img,
+    .experiencia-profissional__novo > img {
+        order: 2;
+    }
+
+    .experiencia-profissional__cubos-bank > div,
+    .experiencia-profissional__pet-boutique > div {
+        order: 1;
+    }
+
+    .experiencia-profissional__pdv-cubos--descricao,
+    .experiencia-profissional__cubos-bank--descricao,
+    .experiencia-profissional__decodificador--descricao,
+    .experiencia-profissional__pet-boutique--descricao {
+        font-size: 1rem;
+    }
+
+    .btn-repositorio {
+        width: 116px;
+        height: 51px;
+    }
+
+    .btn-ver_demo {
+        width: 116px;
+        height: 51px;
     }
 }
