@@ -144,7 +144,7 @@
 .atividade__container--skills--itens {
     display: flex;      
     margin-top: 32px;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .atividade__container--skills--item {
@@ -192,15 +192,13 @@
     align-items: center;    
     height: 1100px;
     padding: 0 9.5rem;    
-    background-color: #EAF2FD;
-    gap: 6rem;                  
+    background-color: #EAF2FD;                     
 }
 
 .formacao__container__graduacao,
 .formacao__container__cursos {
     display: flex;    
     flex-direction: column;    
-    align-items: center;
     gap: 1rem;
 }
 
@@ -208,8 +206,7 @@
 .formacao__container__cursos__itens {
     display: flex;    
     font-size: 16px;
-    color: #464646;
-      
+    color: #464646;      
 }    
 
 .formacao__container__graduacao__itens h5
@@ -249,8 +246,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 2rem;   
-    width: 100%;
-    height: 1980px;
+    width: 100%;    
     padding: 0 9.5rem;
     gap: 2rem;
 }
@@ -527,6 +523,91 @@ textarea:focus {
         color: #464646;     
         background-color: #FFF;        
     }
+
+    /* seção formação */
+
+    .formacao {
+        height: 1550px;
+        gap: 12rem;            
+    }
+    
+    .formacao__container__graduacao h2,
+    .formacao__container__cursos h2,
+    .experiencia-profissional h2 {
+        font-size: 1.375rem;
+    }
+
+    .formacao__container__cursos__itens {
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+    }
+
+    .formacao__container__graduacao--ufc,
+    .formacao__container__cursos--cubos, 
+    .formacao__container__cursos--devmedia,
+    .formacao__container__cursos--alura {    
+        width: 296px;
+        height: 169px;  
+        font-size: 0.875rem;
+        text-align: left;
+    }
+
+    .formacao__container__graduacao--ufc h5,
+    .formacao__container__cursos--cubos h5, 
+    .formacao__container__cursos--devmedia h5,
+    .formacao__container__cursos--alura h5,
+    .experiencia-profissional__pdv-cubos--descricao h5 ,
+    .experiencia-profissional__cubos-bank--descricao h5,
+    .experiencia-profissional__decodificador--descricao h5,
+    .experiencia-profissional__pet-boutique--descricao h5 {    
+        font-size: 1rem;
+    }
+
+    /* seção experiência profissional */
+
+    .experiencia-profissional {
+        display: flex;
+        flex-direction: column;        
+        width: 100%;
+        height: 1350px;
+        padding: 1rem;       
+        gap: 2rem;
+    }
+
+    .experiencia-profissional__pdv-cubos,
+    .experiencia-profissional__cubos-bank,
+    .experiencia-profissional__decodificador,
+    .experiencia-profissional__pet-boutique {
+        display: flex;        
+        flex-direction: column;
+        width: 100%;
+        height: 169px;
+        margin-bottom: 7rem;
+    }    
+
+    .experiencia-profissional__cubos-bank > img,
+    .experiencia-profissional__novo > img {
+        order: 1;
+    }
+
+    .experiencia-profissional__cubos-bank > div,
+    .experiencia-profissional__pet-boutique > div {
+        order: 2;
+    }
+
+    .experiencia-profissional__pdv-cubos--descricao p ,
+    .experiencia-profissional__cubos-bank--descricao p,
+    .experiencia-profissional__decodificador--descricao p,
+    .experiencia-profissional__pet-boutique--descricao p {    
+        font-size: 0.875rem;
+    }
+
+    .btn-repositorio,
+    .btn-ver_demo {
+        width: 108px;
+        height: 40px;
+    }
 }
 
 
@@ -679,9 +760,14 @@ textarea:focus {
     }
 
     .formacao__container__graduacao__itens,
-    .formacao__container__cursos__itens {        
+    .formacao__container__cursos__itens {                
         gap: 1rem;    
     }
+
+    .formacao__container__cursos__itens {
+        display: flex;
+        flex-direction: row;
+    }    
 
     .formacao__container__graduacao--ufc,
     .formacao__container__cursos--cubos, 
@@ -710,7 +796,8 @@ textarea:focus {
         display: flex;
         flex-direction: column;
         padding: 0 2rem;
-        height: 2200px;
+        height: 2250px; 
+        gap: 3rem;
     }
 
     .experiencia-profissional__pdv-cubos,
@@ -719,7 +806,9 @@ textarea:focus {
     .experiencia-profissional__pet-boutique  {
         display: flex;
         flex-direction: column;
-                
+        width: 100%;
+        height: 427px;
+        margin-bottom: 4rem;                        
     }
 
     .experiencia-profissional__cubos-bank > img,
@@ -739,11 +828,7 @@ textarea:focus {
         font-size: 0.875rem;
     }
 
-    .btn-repositorio {
-        width: 108px;
-        height: 40px;
-    }
-
+    .btn-repositorio,
     .btn-ver_demo {
         width: 108px;
         height: 40px;
@@ -835,7 +920,7 @@ textarea:focus {
 
     .sobre-mim {
         height: 400px;
-        padding: 0 9.5rem;
+        padding: 3rem 9.5rem;
     }
 
     .sobre-mim__container {
@@ -859,7 +944,7 @@ textarea:focus {
 
     .formacao__container__graduacao__itens,
     .formacao__container__cursos__itens {        
-        gap: 9rem;    
+        gap: 3rem;    
     }
 
     .formacao__container__graduacao h2,
@@ -891,8 +976,9 @@ textarea:focus {
 
     .atividade {
         display: flex;        
-        height: 650px;
-        background-color: #FFF;     
+        height: 700px;
+        background-color: #FFF;
+        padding: 4rem 0;        
     }
 
     .atividade__container--skills, 
@@ -915,8 +1001,7 @@ textarea:focus {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: nowrap;
-        width: 100%;     
+        flex-wrap: nowrap;             
     }
 
     .atividade__container--skills--item, 
@@ -931,8 +1016,12 @@ textarea:focus {
     .experiencia-profissional {
         display: flex;
         flex-direction: column;
-        padding: 0 9.5rem;
-        height: 1950px;
+        padding: 3rem 9.5rem;
+        height: 2100px;        
+    }
+
+    .experiencia-profissional h2 {
+        font-size: 2rem;
     }
 
     .experiencia-profissional__pdv-cubos,
@@ -940,7 +1029,10 @@ textarea:focus {
     .experiencia-profissional__decodificador,
     .experiencia-profissional__pet-boutique  {
         display: flex;
-        flex-direction: row;          
+        flex-direction: row;
+        width: 100%;
+        gap: 4rem;        
+        margin-bottom: 0;          
     }
 
     .experiencia-profissional__cubos-bank > img,
@@ -960,11 +1052,7 @@ textarea:focus {
         font-size: 1rem;
     }
 
-    .btn-repositorio {
-        width: 116px;
-        height: 51px;
-    }
-
+    .btn-repositorio,
     .btn-ver_demo {
         width: 116px;
         height: 51px;
