@@ -491,6 +491,9 @@ textarea:focus {
     /* seção atividade */
 
     .atividade {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 53.75rem;           
         background-color: #EDEDED;
         padding: 1rem;
@@ -771,13 +774,18 @@ textarea:focus {
     /* seção atividade */
 
     .atividade {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 50rem;           
         background-color: #EDEDED;     
     }  
 
     .atividade__container__skills,
     .atividade__container__hobbies  {
-        display: flex;                 
+        display: flex;
+        width: 45.5rem; 
+        padding: 0 0.7rem;                        
     }
 
     .atividade__container__skills h2, 
@@ -797,7 +805,7 @@ textarea:focus {
 
     .atividade__container__skills--itens:nth-child(3), 
     .atividade__container__hobbies--itens:nth-child(3) {
-        margin-right: 1rem;        
+        margin-right: 0px;        
     }
 
     .atividade__container__skills--item, 
@@ -995,7 +1003,9 @@ textarea:focus {
     /* seção atividade */
 
     .atividade {
-        display: flex;        
+        display: flex;
+        justify-content: center;
+        align-items: center;        
         height: 43.75rem;
         background-color: #FFF;
         padding: 4rem 0;        
@@ -1222,17 +1232,21 @@ textarea:focus {
     /* seção atividade */
 
     .atividade {
-        display: flex;        
+        display: flex;
+        justify-content: center;
+        align-items: center;        
         height: 43.75rem;
         background-color: #FFF;
         padding: 4rem 0;
-        height: 47rem;        
+        height: 48rem;
+        gap: 4rem;       
     }
 
-    .atividade__container__skills, 
+    .atividade__container__skills,
     .atividade__container__hobbies  {
-        display: flex;                       
-        height: auto;        
+        display: flex;
+        width: 71rem;                       
+        height: auto;                              
     }
 
     .atividade__container__skills h2, 
