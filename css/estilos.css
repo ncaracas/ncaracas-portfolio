@@ -2,10 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
-    box-sizing: border-box;    
-    font-family: "Raleway", sans-serif;
 }
 
 body {    
@@ -117,6 +113,7 @@ body {
 
 .sobre-mim__container img {
     width: 8.12rem;
+    max-width: 100%;
 }
 
 .atividade {
@@ -276,6 +273,7 @@ body {
 .experiencia-profissional__cubos-bank img,
 .experiencia-profissional__decodificador img,
 .experiencia-profissional__pet-boutique img {
+    max-width: 100%;
     box-shadow: 1px 5px 5px #686363;
 }
 
@@ -409,9 +407,9 @@ textarea:focus {
 @media (min-width: 360px) {
     /* seção cabeçalho */
     
-    .cabecalho__container {             
+    .cabecalho__container {                    
         height: 3.5rem;
-        padding: 1rem;        
+        padding: 1rem;       
     }
 
     .cabecalho__container__menu {
@@ -437,7 +435,7 @@ textarea:focus {
     .apresentacao {
         display: flex;
         flex-direction: column;
-        padding: 1rem;        
+        padding: 1rem;      
     }
 
     .apresentacao__container {
@@ -498,13 +496,13 @@ textarea:focus {
         background-color: #EDEDED;
         padding: 1rem;
         height: 60rem;
-        gap: 1rem;    
+        gap: 1rem;   
     }  
 
     .atividade__container__skills,
     .atividade__container__hobbies  {
         display: flex;
-        padding: 2rem 0;                         
+        padding: 2rem 0;                                 
     }
 
     .atividade__container__skills h2, 
@@ -519,12 +517,12 @@ textarea:focus {
     .atividade__container__hobbies--itens {  
         display: flex;         
         flex-wrap: wrap;
-        width: 100%;      
+        width: 100%;              
     }
 
     .atividade__container__skills--itens:nth-child(2), 
     .atividade__container__hobbies--itens:nth-child(2) {
-        margin-right: 0.5rem;        
+        margin-right: 0;        
     }
 
     .atividade__container__skills--item, 
@@ -553,8 +551,9 @@ textarea:focus {
     .formacao__container__cursos__itens {
         display: flex;
         flex-direction: column;
-        gap: 10rem;
-        height: 60rem;       
+        align-items: center;        
+        gap: 10rem;        
+        height: 60rem;             
     }
 
     .formacao__container__graduacao--ufc,
@@ -564,7 +563,7 @@ textarea:focus {
         width: 18.5rem;
         height: 10.56rem;  
         font-size: 0.875rem;
-        text-align: left;
+        text-align: left;       
     }
 
     .formacao__container__graduacao--ufc h5,
@@ -584,7 +583,7 @@ textarea:focus {
         display: flex;
         flex-direction: column;        
         width: 100%;
-        height: 90.62rem;
+        height: 91rem;
         padding: 1rem;       
         gap: 3rem;
     }
@@ -629,7 +628,7 @@ textarea:focus {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 47rem;        
+        height: 47rem;      
     }
 
     .contato__container {
@@ -671,7 +670,7 @@ textarea:focus {
         justify-content: left;
         width: 9.44rem;
         height: 2.5rem;       
-    }
+    }    
 }
 
 
@@ -737,7 +736,7 @@ textarea:focus {
     
     .apresentacao img {
         width: 25%;
-        max-width: 18.75rem;        
+       /* max-width: 18.75rem;  */      
     }
 
     .apresentacao > img {
@@ -818,7 +817,7 @@ textarea:focus {
     /* seção formação */
 
     .formacao {        
-        height: 48rem;        
+        height: 55rem;        
         gap: 3rem;
     }
 
@@ -1142,7 +1141,8 @@ textarea:focus {
     }
 
     .contato__container img{
-        display: flex;                       
+        display: flex;
+        max-width: 100%;                      
     }
 
     .contato__container__formulario--entradas{        
@@ -1362,7 +1362,8 @@ textarea:focus {
     /* seção contato */
 
     .contato__container img {
-        display: flex;        
+        display: flex;
+        max-width: 100%;       
     }
 
     .contato__container__formulario {        
